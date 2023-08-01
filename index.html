@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    h1 {
+      text-align: center;
+      padding: 20px 0;
+      color: #333;
+    }
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 10px;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    }
+    .item img {
+      max-width: 60%;   /* Adjust this value to change the image size */
+      margin-bottom: 20px;
+    }
+    .item input {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: #fff;
+      margin: 10px 0;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Inventory Counter</h1>
+
+<div id="inventory"></div>
+
+
+
+<br />
+<div id="inventory"></div>
+<p id="totalSales"></p>
+
+<br />
+<p id="sheetTotal"></p>
+<div>
+	<strong>Machine Numbers</strong>
+	<br />
+  <input type="number" id="machineTotal" placeholder="Machine total">
+  <input type="number" id="tipOut" placeholder="Tip out">
+</div>
+<strong><p id="grandTotal"></p></strong>
+
+<br />
+<br />
+
+<button onclick="calculateInventory()">Calculate</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
